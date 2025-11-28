@@ -44,12 +44,12 @@
 :root {
   --radius: 0.625rem;
   --background: #ffffff;
-  --foreground: #0C242F;
+  --foreground: #0c242f;
   --card: #ffffff;
-  --card-foreground: #0C242F;
+  --card-foreground: #0c242f;
   --popover: #ffffff;
-  --popover-foreground: #0C242F;
-  --primary: #0093D0;
+  --popover-foreground: #0c242f;
+  --primary: #0093d0;
   --primary-foreground: #ffffff;
   --secondary: #003764;
   --secondary-foreground: #ffffff;
@@ -60,30 +60,30 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #0093D0;
+  --ring: #0093d0;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: #ffffff;
-  --sidebar-foreground: #0C242F;
-  --sidebar-primary: #0093D0;
+  --sidebar-foreground: #0c242f;
+  --sidebar-primary: #0093d0;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #f1f5f9;
   --sidebar-accent-foreground: #003764;
   --sidebar-border: #e2e8f0;
-  --sidebar-ring: #0093D0;
+  --sidebar-ring: #0093d0;
 }
 
 .dark {
-  --background: #0C242F;
+  --background: #0c242f;
   --foreground: #ffffff;
-  --card: #0C242F;
+  --card: #0c242f;
   --card-foreground: #ffffff;
-  --popover: #0C242F;
+  --popover: #0c242f;
   --popover-foreground: #ffffff;
-  --primary: #0093D0;
+  --primary: #0093d0;
   --primary-foreground: #ffffff;
   --secondary: #003764;
   --secondary-foreground: #ffffff;
@@ -94,20 +94,20 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: #003764;
   --input: #003764;
-  --ring: #0093D0;
+  --ring: #0093d0;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: #0C242F;
+  --sidebar: #0c242f;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #0093D0;
+  --sidebar-primary: #0093d0;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #003764;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #003764;
-  --sidebar-ring: #0093D0;
+  --sidebar-ring: #0093d0;
   --color-navy: #1f1e1d;
 }
 
@@ -135,7 +135,7 @@
 
 @media only screen and (device-width: 375px) and (device-height: 667px) {
   .contact-sp {
-    @apply mt-24;
+    @apply mt-28;
   }
 }
 

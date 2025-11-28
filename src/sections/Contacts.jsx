@@ -10,7 +10,8 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="text-lg text-muted-foreground">
-            Get in touch for quotes, service inquiries, or general questions
+            Get in touch with us to move your freight, service inquiries or
+            general questions.
           </p>
         </div>
 

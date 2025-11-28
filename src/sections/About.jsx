@@ -28,7 +28,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="order-first md:order-last">
+          <div className="order-first md:order-last hidden md:block">
             <img
               src={fleetTrucks}
               alt="Professional truck fleet"
