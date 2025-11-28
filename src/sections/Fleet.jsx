@@ -30,7 +30,7 @@ const Fleet = () => {
   return (
     <section
       id="fleet"
-      className="py-20 bg-white h-screen flex justify-center "
+      className="py-20 bg-white h-full flex justify-center "
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
