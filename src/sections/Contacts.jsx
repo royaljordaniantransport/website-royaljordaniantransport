@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-secondary">
+    <section id="contact" className="py-20 bg-[]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
@@ -18,47 +18,50 @@ const Contact = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-accent" />
+                <Phone className="w-5 h-5 " />
                 Phone
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">(555) 123-4567</p>
+              <a href="tel:+1313-258-5571" className="text-muted-foreground">
+                +1313-258-5571
+              </a>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-accent" />
+                <Mail className="w-5 h-5" />
                 Email
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">contact@uslogistics.com</p>
+              <a
+                href="mailto:royaljordaniantransport@gamil.com"
+                className="text-muted-foreground"
+              >
+                royaljordaniantransport@gamil.com
+              </a>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-accent" />
+                <MapPin className="w-5 h-5 " />
                 Office Address
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
-                123 Logistics Way
-                <br />
-                Transportation City, TX 75001
-              </p>
+              <p className="text-muted-foreground">Dearborn, MI 48126</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-accent" />
+                <Clock className="w-5 h-5 " />
                 Working Hours
               </CardTitle>
             </CardHeader>
