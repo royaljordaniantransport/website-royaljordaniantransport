@@ -42,10 +42,10 @@ const Services = () => {
   return (
     <section id="services" className="p-8 flex justify-center ">
       <div className=" flex justify-center items-center w-full">
-        <div className="bg-[#1f1e1d] rounded-3xl p-6 md:p-12 border border-gray-200 shadow-lg">
+        <div className="bg-secondary rounded-3xl p-6 md:p-12 border border-gray-200 shadow-lg">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-12">
             <div>
-              <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-2 rounded-full mb-4 border border-red-200">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-4 border border-primary/20">
                 <Wrench className="w-4 h-4" />
                 <span className="text-sm font-medium">Services</span>
               </div>
@@ -53,8 +53,9 @@ const Services = () => {
                 Our Services.
               </h2>
               <p className="text-gray-300 text-sm md:text-base uppercase tracking-wide max-w-xl">
-                WE ROAR WITH SUCCESS, DELIVERING THE TRIONN. THROUGH VERSATILE
-                DESIGN, BRANDING AND THE LATEST TECH.
+                Our trucking company delivers freight nationwide with reliable,
+                on-time service. A 24/7 dispatch team provides constant
+                communication and real-time load support.
               </p>
             </div>
           </div>
@@ -67,7 +68,7 @@ const Services = () => {
                   <TabsTrigger
                     key={service.id}
                     value={service.id}
-                    className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 rounded-2xl text-sm md:text-base font-semibold transition-all duration-300 bg-gray-100 text-gray-600 border border-gray-200 hover:bg-gray-200 data-[state=active]:bg-red-500 data-[state=active]:text-white data-[state=active]:border-red-500"
+                    className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 rounded-2xl text-sm md:text-base font-semibold transition-all duration-300 bg-gray-100 text-gray-600 border border-gray-200 hover:bg-gray-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary"
                   >
                     <Icon className="size-5" />
                     {service.title}
@@ -87,7 +88,7 @@ const Services = () => {
                   <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                     <div className="space-y-4 md:space-y-6">
                       <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center border border-gray-200">
-                        <Icon className="w-7 h-7 text-red-500" />
+                        <Icon className="w-7 h-7 text-primary" />
                       </div>
                       <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
                         {service.title}
@@ -95,7 +96,7 @@ const Services = () => {
                       <p className="text-gray-300 text-sm uppercase tracking-wide leading-relaxed">
                         {service.tagline}
                       </p>
-                      <button className="inline-flex items-center gap-2 bg-red-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition-all duration-300">
+                      <button className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-all duration-300">
                         Let's Chat
                         <span className="text-lg">🎧</span>
                       </button>

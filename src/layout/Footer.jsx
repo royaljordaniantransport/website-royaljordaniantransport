@@ -8,6 +8,9 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
+import { links } from "@/constants";
+
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const scrollToSection = (id) => {
@@ -18,7 +21,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#1f1e1d] px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-8 relative">
+    <div className="bg-secondary px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-8 relative">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <a
@@ -27,7 +30,7 @@ const Footer = () => {
             title="Company"
             className="inline-flex items-center"
           >
-            <Building2 className="w-8 h-8 text-red-500" />
+            <img src={logo} className="w-8 h-8 text-primary" />
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
               Royal Jordanian Transport
             </span>
@@ -50,28 +53,18 @@ const Footer = () => {
           <div className="flex flex-col space-y-2">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
+              className="text-left transition-colors duration-300 text-gray-300 hover:text-primary cursor-pointer flex items-center"
             >
               Home
             </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
-            >
-              Services
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
-            >
-              Contact
-            </button>
+            {links.map((link) => (
+              <button key={link._id}
+                onClick={() => scrollToSection(link.link)}
+                className="text-left transition-colors duration-300 text-gray-300 hover:text-primary cursor-pointer flex items-center"
+              >
+                {link.title}
+              </button>
+            ))}
           </div>
         </div>
 
@@ -85,7 +78,7 @@ const Footer = () => {
               href="tel:+1313-258-5571"
               aria-label="Our phone"
               title="Our phone"
-              className="transition-colors duration-300 text-red-500 hover:text-red-700"
+              className="transition-colors duration-300 text-primary hover:text-primary/80"
             >
               +1313-258-5571
             </a>
@@ -96,7 +89,7 @@ const Footer = () => {
               href="mailto:royaljordaniantransport@gamil.com"
               aria-label="Our email"
               title="Our email"
-              className="transition-colors duration-300 text-red-500 hover:text-red-700"
+              className="transition-colors duration-300 text-primary hover:text-primary/80"
             >
               royaljordaniantransport@gamil.com
             </a>
@@ -109,7 +102,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Our address"
               title="Our address"
-              className="transition-colors duration-300 text-red-500 hover:text-red-700"
+              className="transition-colors duration-300 text-primary hover:text-primary/80"
             >
               Dearborn, MI 48126
             </a>
@@ -125,7 +118,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-primary p-2 rounded-full hover:bg-purple-50"
               aria-label="Twitter"
             >
               <Twitter size={20} />
@@ -134,7 +127,7 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-primary p-2 rounded-full hover:bg-purple-50"
               aria-label="Instagram"
             >
               <Instagram size={20} />
@@ -143,7 +136,7 @@ const Footer = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-primary p-2 rounded-full hover:bg-purple-50"
               aria-label="Facebook"
             >
               <Facebook size={20} />
@@ -152,7 +145,7 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-primary p-2 rounded-full hover:bg-purple-50"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
@@ -173,7 +166,7 @@ const Footer = () => {
           <li>
             <a
               href="/"
-              className="text-sm text-gray-300 transition-colors duration-300 hover:text-red-500"
+              className="text-sm text-gray-300 transition-colors duration-300 hover:text-primary"
             >
               Privacy Policy
             </a>
@@ -181,7 +174,7 @@ const Footer = () => {
           <li>
             <a
               href="/terms"
-              className="text-sm text-gray-300 transition-colors duration-300 hover:text-red-500"
+              className="text-sm text-gray-300 transition-colors duration-300 hover:text-primary"
             >
               Terms &amp; Conditions
             </a>

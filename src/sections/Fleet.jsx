@@ -1,34 +1,37 @@
 import reeferTruck from "@/assets/fleet2.png";
-import longHaulTruck from "@/assets/fleet3.png";
 import fleetTrucks from "@/assets/fleet1.png";
+import power from "@/assets/poweronly.png";
 
 const Fleet = () => {
   const fleetItems = [
     {
       image: fleetTrucks,
       title: "Dry Van Trucks",
-      subtitle: "(Primary)",
+      subtitle: "",
       description:
         "Standard long-haul Dry Van trailers ideal for general freight. Most of our operations revolve around this category.",
     },
     {
       image: reeferTruck,
       title: "Reefer Trucks",
-      subtitle: "(Optional)",
+      subtitle: "",
       description:
         "Temperature-controlled trailers for perishable goods requiring specific climate conditions.",
     },
     {
-      image: longHaulTruck,
-      title: "Long-Haul Trucks",
+      image: power,
+      title: "Power Only",
       subtitle: "",
       description:
-        "Capable of multi-state trips covering long distances efficiently across the nation.",
+        "Tractor units without trailers, used to haul customer-owned or third-party trailers.",
     },
   ];
 
   return (
-    <section id="fleet" className="py-20 bg-white h-screen flex justify-center ">
+    <section
+      id="fleet"
+      className="py-20 bg-white h-screen flex justify-center "
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">

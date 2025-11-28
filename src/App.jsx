@@ -8,6 +8,9 @@ import Services from "./sections/Services";
 import Fleet from "./sections/Fleet";
 import Contact from "./sections/Contacts";
 
+import Customer from "./sections/Customer";
+import Mission from "./sections/Mission";
+
 const App = () => {
   return (
     <Wrapper>
@@ -16,6 +19,8 @@ const App = () => {
       <main >
         <Hero />
         <About />
+        <Mission />
+        <Customer />
         <Services />
         <Fleet />
         <Contact />

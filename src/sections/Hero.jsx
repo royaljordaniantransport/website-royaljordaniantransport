@@ -38,7 +38,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 onClick={scrollToContact}
-                className="text-white font-semibold px-8 py-6 text-lg hover:bg-red-500/80 bg-red-500"
+                className="text-white font-semibold px-8 py-6 text-lg hover:bg-primary/80 bg-primary"
               >
                 Contact Us
               </Button>
