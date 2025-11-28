@@ -102,7 +102,7 @@ const Services = () => {
                     </div>
 
                     <div className="relative">
-                      <div className="relative aspect-3/3 rounded-3xl overflow-hidden border-4 ">
+                      <div className="relative w-full max-w-md aspect-4/3 rounded-3xl overflow-hidden border-4 mx-auto">
                         <img
                           src={service.imgSrc}
                           alt={service.title}
