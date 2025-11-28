@@ -13,20 +13,20 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-[600px] md:h-[700px] xl:h-screen flex items-center p-8"
+      className="relative h-[600px] md:h-[700px] xl:h-screen flex items-center sm:p-8 p-2"
     >
       <div
-        className="bg-cover overflow-hidden relative bg-center w-full h-full flex bg-op justify-center items-center rounded-3xl"
+        className="bg-cover overflow-hidden relative bg-center w-full h-full flex justify-center items-center rounded-3xl"
         style={{ backgroundImage: `url(${heroTruck})` }}
       >
         <div className="bg-gradient w-full h-full flex justify-center items-center">
           <div className="container flex justify-center items-center mx-auto px-4 relative z-10 text-white">
             <div className="max-w-3xl text-center">
               <SplitText
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white"
+                className="text-4xl leading-tight md:text-5xl lg:text-6xl font-extrabold mb-6 text-white"
                 splitType="words"
                 tag="h1"
-                text={"Reliable Dry Van Transportation Across 50 U.S. States"}
+                text={"Reliable Dry Van Transportation Across 50+ U.S. States"}
               />
               <SplitText
                 className="text-xl md:text-2xl mb-8 text-white/90"

@@ -7,7 +7,6 @@ import {
   Instagram,
   Facebook,
   Linkedin,
-  ArrowUp,
 } from "lucide-react";
 
 const Footer = () => {
@@ -29,16 +28,16 @@ const Footer = () => {
             className="inline-flex items-center"
           >
             <Building2 className="w-8 h-8 text-red-500" />
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              Company
+            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+              Royal Jordanian Transport
             </span>
           </a>
           <div className="mt-6 lg:max-w-sm">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-300">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam.
             </p>
-            <p className="mt-4 text-sm text-gray-600">
+            <p className="mt-4 text-sm text-gray-300">
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
               beatae vitae dicta sunt explicabo.
             </p>
@@ -46,31 +45,31 @@ const Footer = () => {
         </div>
 
         <div className="space-y-2 text-sm">
-          <p className="text-base font-bold tracking-wide text-gray-900">
+          <p className="text-base font-bold tracking-wide text-white">
             Quick Links
           </p>
           <div className="flex flex-col space-y-2">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-left transition-colors duration-300 text-gray-600 hover:text-red-500 cursor-pointer flex items-center"
+              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-left transition-colors duration-300 text-gray-600 hover:text-red-500 cursor-pointer flex items-center"
+              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-left transition-colors duration-300 text-gray-600 hover:text-red-500 cursor-pointer flex items-center"
+              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-left transition-colors duration-300 text-gray-600 hover:text-red-500 cursor-pointer flex items-center"
+              className="text-left transition-colors duration-300 text-gray-300 hover:text-red-500 cursor-pointer flex items-center"
             >
               Contact
             </button>
@@ -78,11 +77,11 @@ const Footer = () => {
         </div>
 
         <div className="space-y-3 text-sm">
-          <p className="text-base font-bold tracking-wide text-gray-900">
+          <p className="text-base font-bold tracking-wide text-white">
             Contacts
           </p>
           <div className="flex items-center">
-            <Phone size={16} className="mr-2 text-gray-600" />
+            <Phone size={16} className="mr-2 text-gray-300" />
             <a
               href="tel:850-123-5021"
               aria-label="Our phone"
@@ -93,7 +92,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex items-center">
-            <Mail size={16} className="mr-2 text-gray-600" />
+            <Mail size={16} className="mr-2 text-gray-300" />
             <a
               href="mailto:info@lorem.mail"
               aria-label="Our email"
@@ -104,7 +103,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex items-center">
-            <MapPin size={16} className="mr-2 text-gray-600" />
+            <MapPin size={16} className="mr-2 text-gray-300" />
             <a
               href="https://www.google.com/maps"
               target="_blank"
@@ -119,7 +118,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <span className="text-base font-bold tracking-wide text-gray-900">
+          <span className="text-base font-bold tracking-wide text-white">
             Social
           </span>
           <div className="flex items-center mt-1 space-x-3">
@@ -127,7 +126,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
               aria-label="Twitter"
             >
               <Twitter size={20} />
@@ -136,7 +135,7 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
               aria-label="Instagram"
             >
               <Instagram size={20} />
@@ -145,7 +144,7 @@ const Footer = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
               aria-label="Facebook"
             >
               <Facebook size={20} />
@@ -154,28 +153,28 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
+              className="text-gray-300 transition-colors duration-300 hover:text-red-500 p-2 rounded-full hover:bg-purple-50"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
           </div>
-          <p className="mt-4 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-gray-300">
             Follow us on social media for updates and news.
           </p>
         </div>
       </div>
 
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-gray-200 lg:flex-row">
-        <p className="text-sm text-gray-600">
-          © Copyright {new Date().getFullYear()} Company Inc. All rights
-          reserved.
+        <p className="text-sm text-gray-300">
+          © Copyright {new Date().getFullYear()} Royal Jordanian Transport. All
+          rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
             <a
-              href="/privacy"
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-red-500"
+              href="/"
+              className="text-sm text-gray-300 transition-colors duration-300 hover:text-red-500"
             >
               Privacy Policy
             </a>
@@ -183,7 +182,7 @@ const Footer = () => {
           <li>
             <a
               href="/terms"
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-red-500"
+              className="text-sm text-gray-300 transition-colors duration-300 hover:text-red-500"
             >
               Terms &amp; Conditions
             </a>
