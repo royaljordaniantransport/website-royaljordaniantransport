@@ -34,12 +34,11 @@ const Footer = () => {
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-gray-300">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              We provide safe, professional, and nationwide long-haul trucking
+              and logistics solutions.
             </p>
             <p className="mt-4 text-sm text-gray-300">
-              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
+              Reliable Dry Van Transportation Across 50+ U.S. States.
             </p>
           </div>
         </div>

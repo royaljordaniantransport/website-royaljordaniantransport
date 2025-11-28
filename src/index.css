@@ -132,3 +132,9 @@
 .bg-gradient {
   @apply bg-gradient-to-t from-[#2b2b2b] to-transparent;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .contact-sp {
+    @apply mt-24;
+  }
+}
