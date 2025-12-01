@@ -163,21 +163,8 @@ const Footer = () => {
           rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-          <li>
-            <a
-              href="/"
-              className="text-sm text-gray-300 transition-colors duration-300 hover:text-primary"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a
-              href="/terms"
-              className="text-sm text-gray-300 transition-colors duration-300 hover:text-primary"
-            >
-              Terms &amp; Conditions
-            </a>
+          <li className="text-white">
+            Developed by <a href="https://github.com/hassaammgl" className="text-primary font-bold">hassaammgl</a>
           </li>
         </ul>
       </div>
