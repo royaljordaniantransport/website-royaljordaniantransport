@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://royaljordaniantransport.com/sitemap.xml
