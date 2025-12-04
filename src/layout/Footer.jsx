@@ -157,16 +157,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-gray-200 lg:flex-row">
+      <div className="flex flex-col-reverse justify-center pt-5 pb-10 border-t border-gray-200 lg:flex-row">
         <p className="text-sm text-gray-300">
           © Copyright {new Date().getFullYear()} Royal Jordanian Transport. All
           rights reserved.
         </p>
-        <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-          <li className="text-white">
-            Developed by <a target="_blank" href="https://www.linkedin.com/in/m-hassaam-mughal-91668a256" className="text-primary font-bold">Hassaam Mughal</a>
-          </li>
-        </ul>
       </div>
     </div>
   );
