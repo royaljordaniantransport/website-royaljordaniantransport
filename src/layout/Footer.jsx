@@ -9,14 +9,28 @@ import {
   Linkedin,
 } from "lucide-react";
 import { links } from "@/constants";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -24,8 +38,8 @@ const Footer = () => {
     <div className="bg-secondary px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-8 relative">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
-          <a
-            href="/"
+          <Link
+            to="/"
             aria-label="Go home"
             title="Company"
             className="inline-flex items-center"
@@ -34,7 +48,7 @@ const Footer = () => {
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
               Royal Jordanian Transport
             </span>
-          </a>
+          </Link>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-gray-300">
               We provide safe, professional, and nationwide long-haul trucking
@@ -158,11 +172,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse justify-center pt-5 pb-10 border-t border-gray-200 lg:flex-row">
-        <p className="text-sm text-gray-300">
+      <div className="flex flex-col items-center justify-between pt-5 pb-10 border-t border-gray-200 lg:flex-row gap-4">
+        <p className="text-sm text-gray-300 text-center lg:text-left">
           © Copyright {new Date().getFullYear()} Royal Jordanian Transport. All
           rights reserved.
         </p>
+        <div className="flex items-center space-x-4 text-sm text-gray-300">
+          <Link to="/privacy-policy" className="hover:text-primary transition-colors duration-300">Privacy Policy</Link>
+          <span>|</span>
+          <Link to="/terms-conditions" className="hover:text-primary transition-colors duration-300">Terms & Conditions</Link>
+        </div>
       </div>
     </div>
   );

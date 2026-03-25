@@ -4,14 +4,27 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { links } from "@/constants";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
     setOpen(false);
   };
@@ -21,12 +34,12 @@ const Header = () => {
       <div className="max-w-5xl mx-auto px-4 py-4  ">
         <div className="flex items-center justify-between">
           <div className="flex flex-row gap-2">
-            <a href="/" className="flex items-center cursor-pointer">
+            <Link to="/" className="flex items-center cursor-pointer">
               <div className="flex items-center gap-1">
                 <span className="text-3xl font-bold text-gray-800">RJT</span>
                 <img src={logo} className="size-10" />
               </div>
-            </a>
+            </Link>
 
             <div className="flex items-center gap-6 justify-start">
               <div className="text-left">

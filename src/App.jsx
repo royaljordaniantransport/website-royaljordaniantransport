@@ -1,32 +1,25 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Wrapper from "./layout/Wrapper";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Services from "./sections/Services";
-import Fleet from "./sections/Fleet";
-import Contact from "./sections/Contacts";
-
-import Customer from "./sections/Customer";
-import Mission from "./sections/Mission";
+import Home from "./pages/Home";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 const App = () => {
   return (
-    <Wrapper>
-
-      <Header />
-      <main >
-        <Hero />
-        <About />
-        <Mission />
-        <Customer />
-        <Services />
-        <Fleet />
-        <Contact />
-      </main>
-      <Footer />
-    </Wrapper>
+    <BrowserRouter>
+      <Wrapper>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
+        </Routes>
+        <Footer />
+      </Wrapper>
+    </BrowserRouter>
   );
 };
 
