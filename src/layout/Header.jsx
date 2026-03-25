@@ -16,8 +16,6 @@ const Header = () => {
     setOpen(false);
   };
 
-
-
   return (
     <header className="bg-white border-b border-border sticky top-0 z-50 ">
       <div className="max-w-5xl mx-auto px-4 py-4  ">
@@ -34,10 +32,10 @@ const Header = () => {
               <div className="text-left">
                 <p className="text-xs text-gray-600">Call Us 24/7/365</p>
                 <a
-                  href="tel:+1313-258-5571"
+                  href="tel:+1313-636-2932"
                   className="text-base font-bold text-cyan-500 hover:text-cyan-600"
                 >
-                  +1313-258-5571
+                  +1313-636-2932
                 </a>
               </div>
             </div>

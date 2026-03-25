@@ -24,8 +24,8 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <a href="tel:+1313-258-5571" className="text-muted-foreground">
-                +1313-258-5571
+              <a href="tel:+1313-636-2932" className="text-muted-foreground">
+                +1313-636-2932
               </a>
             </CardContent>
           </Card>
