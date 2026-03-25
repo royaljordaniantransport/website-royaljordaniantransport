@@ -1,4 +1,4 @@
-# Royal Jordanian Transport - Website
+# Royal Jordanian Transport - Website By Hassaam Mughal
 
 A modern, responsive, and animated corporate website for Royal Jordanian Transport, built with React, Vite, and Tailwind CSS. The website features smooth scrolling, complex animations, and a rich user interface to showcase the company's services, fleet, and mission.
 
@@ -57,6 +57,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed along with a package ma
 ### Installation
 
 1. Navigate to the project directory:
+
    ```bash
    cd website-royaljordaniantransport
    ```
