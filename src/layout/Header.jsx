@@ -45,10 +45,10 @@ const Header = () => {
               <div className="text-left">
                 <p className="text-xs text-gray-600">Call Us 24/7/365</p>
                 <a
-                  href="tel:+1313-636-2932"
+                  href="tel:+1313-258-5571"
                   className="text-base font-bold text-cyan-500 hover:text-cyan-600"
                 >
-                  +1313-636-2932
+                  +1313-258-5571
                 </a>
               </div>
             </div>

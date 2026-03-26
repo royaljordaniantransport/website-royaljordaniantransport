@@ -90,12 +90,12 @@ const Footer = () => {
           <div className="flex items-center">
             <Phone size={16} className="mr-2 text-gray-300" />
             <a
-              href="tel:+1313-636-2932"
+              href="tel:+1313-258-5571"
               aria-label="Our phone"
               title="Our phone"
               className="transition-colors duration-300 text-primary hover:text-primary/80"
             >
-              +1313-636-2932
+              +1313-258-5571
             </a>
           </div>
           <div className="flex items-center">
