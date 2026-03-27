@@ -178,11 +178,11 @@ const Footer = () => {
           © Copyright {new Date().getFullYear()} Royal Jordanian Transport. All
           rights reserved.
         </p>
-        {/* <div className="flex items-center space-x-4 text-sm text-gray-300">
+        <div className="flex items-center space-x-4 text-sm text-gray-300">
           <Link to="/privacy-policy" className="hover:text-primary transition-colors duration-300">Privacy Policy</Link>
           <span>|</span>
           <Link to="/terms-conditions" className="hover:text-primary transition-colors duration-300">Terms & Conditions</Link>
-        </div> */}
+        </div>
       </div>
     </div>
   );
