@@ -6,7 +6,7 @@ const TermsConditions = () => {
   }, []);
 
   return (
-    <div className="bg-background text-foreground min-h-screen pt-32 pb-20 px-4 md:px-8 lg:px-16 max-w-5xl mx-auto">
+    <div className="bg-background text-foreground min-h-screen pt-16 pb-20 px-4 md:px-8 lg:px-16 max-w-5xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8 text-center">Terms & Conditions</h1>
       
       <div className="space-y-6 text-sm md:text-base leading-relaxed text-gray-700 dark:text-gray-300">
@@ -43,6 +43,88 @@ const TermsConditions = () => {
         <p>
           These Terms will be governed by and construed in accordance with the laws of the State of Michigan, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Michigan for the resolution of any disputes.
         </p>
+
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6 border-t border-gray-200 dark:border-gray-800 pt-8">SMS Terms & Conditions</h2>
+        
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">1. SMS Consent Communication</h3>
+            <p>
+              Information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">2. Types of SMS Communications</h3>
+            <p className="mb-2">
+              If consent has been given to receive text messages from Royal Jordanian Transport, messages may be received related to the following:
+            </p>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>Appointment reminders</li>
+              <li>Follow-up messages</li>
+            </ul>
+            <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md mb-4 border-l-4 border-primary italic">
+              <p>
+                Example: Thank you for reaching out to Royal Jordanian Transport. We've received your inquiry and are working on a solution. Our team will update you within 24-48 hours.
+              </p>
+            </div>
+            <p>
+              For any further questions, feel free to reply or contact us at <a href="tel:+1313-636-2932" className="text-primary hover:underline">+1 313-636-2932</a>.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">3. Message Frequency</h3>
+            <p>
+              Message frequency may vary depending on the type of communication. For example, up to 10 SMS messages per week may be received related to appointments/billing, etc.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">4. Potential Fees for SMS Messaging</h3>
+            <p>
+              Standard message and data rates may apply, depending on the carrier's pricing plan. These fees may vary if the message is sent domestically or internationally.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">5. Opt-In Method</h3>
+            <p className="mb-2">
+              Opt-in to receive SMS messages from Royal Jordanian Transport can be done in the following ways:
+            </p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>We ask them verbally</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">6. Opt-Out Method</h3>
+            <p>
+              Opting out of receiving SMS messages can be done at any time by replying "STOP" to any SMS message received. Alternatively, direct contact can be made to request removal from the messaging list.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">7. Help</h3>
+            <p className="mb-2">
+              For any issues, reply with the keyword HELP. Alternatively, help can be obtained directly from us at <a href="tel:+1313-636-2932" className="text-primary hover:underline">+1 313-636-2932</a>.
+            </p>
+            <p className="font-semibold mt-4">Additional Options:</p>
+            <p className="mt-1">
+              If SMS messages are not desired, the SMS consent box on forms can be left unchecked.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">8. Standard Messaging Disclosures</h3>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Message and data rates may apply.</li>
+              <li>Opt out at any time by texting "STOP."</li>
+              <li>For assistance, text "HELP" or visit our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> and <a href="/terms-conditions" className="text-primary hover:underline">Terms & Conditions</a> pages.</li>
+              <li>Message frequency may vary.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

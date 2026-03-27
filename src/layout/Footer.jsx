@@ -107,7 +107,7 @@ const Footer = () => {
               title="Our email"
               className="transition-colors duration-300 text-primary hover:text-primary/80"
             >
-              royaljordaniantransport@gamil.com
+              royaljordaniantransport@gmail.com
             </a>
           </div>
           <div className="flex items-center">
