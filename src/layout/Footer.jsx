@@ -97,7 +97,6 @@ const Footer = () => {
             >
               +1313-636-2932
             </a>
-            +1313-636-2932
           </div>
           <div className="flex items-center">
             <Mail size={16} className="mr-2 text-gray-300" />
