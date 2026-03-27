@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const TermsConditions = () => {
   useEffect(() => {
@@ -120,7 +121,7 @@ const TermsConditions = () => {
             <ul className="list-disc pl-6 space-y-1">
               <li>Message and data rates may apply.</li>
               <li>Opt out at any time by texting "STOP."</li>
-              <li>For assistance, text "HELP" or visit our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> and <a href="/terms-conditions" className="text-primary hover:underline">Terms & Conditions</a> pages.</li>
+              <li>For assistance, text "HELP" or visit our <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link> and <Link to="/terms-conditions" className="text-primary hover:underline">Terms & Conditions</Link> pages.</li>
               <li>Message frequency may vary.</li>
             </ul>
           </div>
