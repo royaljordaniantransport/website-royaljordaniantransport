@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const PrivacyPolicy = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="bg-background text-foreground min-h-screen pt-16 pb-20 px-4 md:px-8 lg:px-16 max-w-5xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8 text-center">Privacy Policy</h1>

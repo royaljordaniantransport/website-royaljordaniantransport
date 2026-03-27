@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const TermsConditions = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="bg-background text-foreground min-h-screen pt-16 pb-20 px-4 md:px-8 lg:px-16 max-w-5xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8 text-center">Terms & Conditions</h1>
@@ -121,7 +117,7 @@ const TermsConditions = () => {
             <ul className="list-disc pl-6 space-y-1">
               <li>Message and data rates may apply.</li>
               <li>Opt out at any time by texting "STOP."</li>
-              <li>For assistance, text "HELP" or visit our <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link> and <Link to="/terms-conditions" className="text-primary hover:underline">Terms & Conditions</Link> pages.</li>
+              <li>For assistance, text "HELP" or visit our <Link to="/privacy-policy" className="text-primary hover:underline" onClick={() => window.scrollTo(0, 0)}>Privacy Policy</Link> and <Link to="/terms-conditions" className="text-primary hover:underline" onClick={() => window.scrollTo(0, 0)}>Terms & Conditions</Link> pages.</li>
               <li>Message frequency may vary.</li>
             </ul>
           </div>
